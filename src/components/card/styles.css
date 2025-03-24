@@ -1,0 +1,7 @@
+.card {
+  transition: all ease-in-out .25s;
+}
+
+.card:hover {
+  filter: brightness(80%);
+}
