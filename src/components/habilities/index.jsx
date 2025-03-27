@@ -1,6 +1,6 @@
 import AcordionItem from "../acordionItem"
-import NavBar from "../navBar"
-import { Container, Row, Col, Card, CardGroup, Accordion } from "react-bootstrap"
+import { Container, Row, Col, Accordion } from "react-bootstrap"
+
 const Habilities = () => {
   const lista_front = [
     {
@@ -68,8 +68,21 @@ const Habilities = () => {
 
   return (
     <>
+      <h1
+          id='habilities'
+          style={{ 
+            color: 'rgba(33, 37, 41, 0.75)', 
+            fontFamily: 'Bebas Neue', 
+            fontSize: 60, 
+            textAlign: 'center',
+            paddingTop: 60,
+            paddingBottom: 50 
+          }}
+        >
+          Habilidades
+        </h1>
       <Container>
-        <Row style={{ borderRadius: 10, paddingTop: 50, paddingBottom: 50 }}>
+        <Row style={{ borderRadius: 10, paddingBottom: 50 }}>
           <Col>
             <h2 style={{ fontFamily: 'Bebas Neue', color: 'rgba(33, 37, 41, 0.75)' }}>
               Front-End

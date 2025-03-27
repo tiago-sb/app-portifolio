@@ -5,7 +5,20 @@ const Formation = () => {
   const [activeTab, setActiveTab] = useState("cursos");
 
   return (
-    <section style={{ width: '100vw', backgroundColor: '#2a29a4', paddingBottom: 50, paddingTop: 50 }}>
+    <section style={{ width: '100vw', backgroundColor: '#2a29a4', paddingBottom: 50 }}>
+      <h1
+        id='formation'
+        style={{
+          color: '#fff',
+          fontFamily: 'Bebas Neue',
+          fontSize: 60,
+          textAlign: 'center',
+          paddingTop: 60,
+          paddingBottom: 50
+        }}
+      >
+        Formação
+      </h1>
       <Container>
         <div className='d-flex flex-row'>
           <Nav variant="underline" className="flex-column flex-shrink-1" style={{ marginRight: 10 }}>
@@ -28,7 +41,7 @@ const Formation = () => {
               </Nav.Link>
             </Nav.Item>
           </Nav>
-          <div className='w-100'>
+          <div className='w-100' style={{ cursor: 'pointer' }}>
             {
               activeTab === "cursos" ? (
                 <>
@@ -41,9 +54,9 @@ const Formation = () => {
                         DIO
                       </Card.Subtitle>
                       <Card.Text style={{ color: '#fff', fontFamily: 'Poppins' }}>
-                        O curso de TypeScript na DIO forneceu uma base sólida para a 
-                        utilização dessa linguagem que aprimora o JavaScript, tornando o 
-                        código mais seguro, escalável e fácil de manter. Através de projetos práticos e exercícios, 
+                        O curso de TypeScript na DIO forneceu uma base sólida para a
+                        utilização dessa linguagem que aprimora o JavaScript, tornando o
+                        código mais seguro, escalável e fácil de manter. Através de projetos práticos e exercícios,
                         pude aprender a unir o conhecimento da área front-end com a de back-end na prática.
                       </Card.Text>
                     </Card.Body>
@@ -57,9 +70,9 @@ const Formation = () => {
                         DIO
                       </Card.Subtitle>
                       <Card.Text style={{ color: '#fff', fontFamily: 'Poppins' }}>
-                        Ao concluir o curso de React na DIO, pude obter uma visão abrangente sobre como construir 
-                        interfaces dinâmicas e reutilizáveis utilizando uma das bibliotecas mais populares do mercado 
-                        de tecnologia atual. O curso focou em conceitos fundamentais como componentes, hooks, estado 
+                        Ao concluir o curso de React na DIO, pude obter uma visão abrangente sobre como construir
+                        interfaces dinâmicas e reutilizáveis utilizando uma das bibliotecas mais populares do mercado
+                        de tecnologia atual. O curso focou em conceitos fundamentais como componentes, hooks, estado
                         e propriedades e ciclo de vida dos componentes.
                       </Card.Text>
                     </Card.Body>
@@ -73,10 +86,10 @@ const Formation = () => {
                         DIO
                       </Card.Subtitle>
                       <Card.Text style={{ color: '#fff', fontFamily: 'Poppins' }}>
-                        Ao completar o curso de JavaScript na DIO, adiquiri uma compreensão profunda dos fundamentos dessa 
-                        linguagem essencial para o desenvolvimento web. O curso abordou conceitos chave como tipos de dados, 
-                        estruturas de controle, funções, arrays, objetos, e muito mais, com uma ênfase 
-                        especial em boas práticas e legibilidade do código. Além disso, o curso proporcionou uma sólida 
+                        Ao completar o curso de JavaScript na DIO, adiquiri uma compreensão profunda dos fundamentos dessa
+                        linguagem essencial para o desenvolvimento web. O curso abordou conceitos chave como tipos de dados,
+                        estruturas de controle, funções, arrays, objetos, e muito mais, com uma ênfase
+                        especial em boas práticas e legibilidade do código. Além disso, o curso proporcionou uma sólida
                         base em manipulação do DOM e eventos, que são cruciais para a criação de interfaces dinâmicas e interativas.
                       </Card.Text>
                     </Card.Body>

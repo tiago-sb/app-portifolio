@@ -7,14 +7,20 @@ import { FaGithub, FaInstagram, FaLinkedin, FaFacebook } from 'react-icons/fa'
 
 const NavBar = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" style={{ fontFamily: 'Bebas Neue', background: 'none' }}>
+    <Navbar collapseOnSelect expand="lg" className="position-fixed w-100" style={{ fontFamily: 'Bebas Neue', backgroundColor: '#fff', zIndex: 1050 }}>
       <Container>
-        <Navbar.Brand href="/">
-          <img src="./images/tiago_bela.png" style={{ width: 100 }} />
+        <Navbar.Brand>
+          <a href="#about-me">
+            <img src="./images/tiago_bela.png" style={{ width: 100 }} alt="Logo" />
+          </a>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className='me-auto'>
+            <Nav.Link href="#about-me">Sobre Mim</Nav.Link>
+            <Nav.Link href="#habilities">Habilidades</Nav.Link>
+            <Nav.Link href="#formation">Formação</Nav.Link>
+            <Nav.Link href="#projects">Projetos</Nav.Link>
           </Nav>
           <Nav style={{ borderRadius: 20 }}>
             <Nav.Link href="https://www.instagram.com/tiagobella.05/" target='_blank'>
@@ -29,15 +35,6 @@ const NavBar = () => {
             <Nav.Link href="https://www.facebook.com/profile.php?id=100018877909315" target='_blank'>
               <FaFacebook />
             </Nav.Link>
-            <NavDropdown title="Linguas" id="collapsible-nav-dropdown">
-              <NavDropdown.Item href="#">
-                <US />
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#">
-                <BR />
-              </NavDropdown.Item>
-            </NavDropdown>
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -25,6 +25,19 @@ const About = () => {
   return (
     <>
       <section style={{ width: '100vw', paddingTop: 50, paddingBottom: 50 }}>
+        <h1
+          id='about-me'
+          style={{ 
+            color: 'rgba(33, 37, 41, 0.75)', 
+            fontFamily: 'Bebas Neue', 
+            fontSize: 60, 
+            textAlign: 'center',
+            paddingTop: 60,
+            paddingBottom: 60 
+          }}
+        >
+          Sobre Mim
+        </h1>
         <Container>
           <Row>
             <Col className={`fade-in ${isVisible ? 'visible' : ''}`}>
@@ -79,7 +92,7 @@ const About = () => {
               >
                 <Modal.Header closeButton>
                   <Modal.Title id="example-custom-modal-styling-title">
-                    Contato
+                    Formas de Contato
                   </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
