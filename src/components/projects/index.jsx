@@ -7,7 +7,8 @@ const Project = () => {
       url: "./images/projetos/website_clothing.png",
       description: "Projeto visando aperfeiçoar aprendizado em programação front-end, a ideia é produzir de forma prática um sistema de compra de peças de roupa envolvendo todos os aspectos dessa situação como carrinho de compras, listagem de produtos e finalização da compra",
       languages: ["html", "css", "react", "bootstrap"],
-      repository: "https://github.com/tiago-sb/app-website-clothing"
+      repository: "https://github.com/tiago-sb/app-website-clothing",
+      deploy: "https://app-website-clothing.vercel.app/"
     },
     {
       name: "clone dio",
@@ -28,28 +29,32 @@ const Project = () => {
       url: "./images/projetos/calculadora.png",
       description: "Um projeto típico de desenvolvimento web moderno que incorpora uma variedade de tecnologias para criar uma experiência de usuário interativa. Faça os seus devidos calculos aritméticos e resolva seu problema de matemática aqui",
       languages: ["hmtl", "css", "react", "styled components"],
-      repository: "https://github.com/tiago-sb/app-calculadora"
+      repository: "https://github.com/tiago-sb/app-calculadora",
+      deploy: "https://app-calculadora-plum.vercel.app/"
     },
     {
       name: "user find github",
       url: "./images/projetos/user_find_github.png",
       description: "Um projeto típico de desenvolvimento web moderno que incorpora uma variedade de tecnologias para criar uma experiência de usuário interativa e responsiva. Procure seu perfil do gitHub neste projeto e encontre algumas informações suas e seus repositórios favoritos",
       languages: ["html", "css", "react"],
-      repository: "https://github.com/tiago-sb/app-user-find-github"
+      repository: "https://github.com/tiago-sb/app-user-find-github",
+      deploy: "https://app-user-find-github.vercel.app/"
     },
     {
       name: "website academy",
       url: "./images/projetos/website_academy.png",
       description: "Visando aperfeiçoar as habilidades nos principais pilares do desenvolvimento Web da atualidade. Neste projeto de código fizemos um website que que poderia ser utilizado por academias",
       languages: ["html", "css", "react", "bootstrap"],
-      repository: "https://github.com/tiago-sb/app-website-academy"
+      repository: "https://github.com/tiago-sb/app-website-academy",
+      deploy: "https://app-website-academy.vercel.app/"
     },
     {
       name: "pokedex",
       url: "./images/projetos/pokedex.png",
       description: "Visando aperfeiçoar as habilidades nos principais pilares do desenvolvimento Web da atualidade. Neste projeto de código fizemos uma pokedex que consome a API REST pokeAPI e integra em sua aplicação aqueles dados consumidos",
       languages: ["html", "css", "javascript"],
-      repository: "https://github.com/tiago-sb/app-pokedex"
+      repository: "https://github.com/tiago-sb/app-pokedex",
+      deploy: "https://app-pokedex-beta.vercel.app/"
     },
     {
       name: "love films",
@@ -91,6 +96,7 @@ const Project = () => {
               description={projeto.description}
               languages={projeto.languages}
               repository={projeto.repository}
+              deploy={projeto.deploy}
             />
           ))
         }

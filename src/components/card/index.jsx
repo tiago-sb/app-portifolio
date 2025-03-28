@@ -9,9 +9,10 @@ import { AiOutlineGlobal } from 'react-icons/ai'
 
 const CardContent = ({ name, src, description, languages, repository, deploy }) => {
   const [show, setShow] = useState(false)
-  
-  const handleClick = () => window.open(repository, '_blank', 'noopener,noreferrer')
 
+  const handleClick = () => window.open(repository, '_blank', 'noopener,noreferrer')
+  const handleClickRepository = () => window.open(deploy, '_blank', 'noopener,noreferrer')
+  
   return (
     <>
       <Card
@@ -64,9 +65,9 @@ const CardContent = ({ name, src, description, languages, repository, deploy }) 
                 </Button>
                 {
                   deploy ? (
-                    <Button variant='dark'>
+                    <Button variant='dark' onClick={handleClickRepository}>
                       <AiOutlineGlobal style={{ marginRight: 10 }} />
-                      <a href={deploy}><b>Acesso ao Projeto</b></a>
+                      <b>Acesso ao Projeto</b>
                     </Button>
                   ) : (
                     <>
