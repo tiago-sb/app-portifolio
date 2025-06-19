@@ -61,7 +61,8 @@ const Project = () => {
       url: "./images/projetos/love_films.png",
       description: "Este aplicativo permite aos usuários buscar filmes de sua escolha e exibir informações detalhadas sobre eles, utilizando uma API para fornecer dados precisos e atualizados. Algumas funcionalidades incluem busca de filmes, exibição de detalhes relevantes e integração com API para obter informações",
       languages: ["html", "css", "javascript"],
-      repository: "https://github.com/tiago-sb/app-love-films"
+      repository: "https://github.com/tiago-sb/app-love-films",
+      deploy: "https://app-love-films.vercel.app/index.html"
     },
     {
       name: "sistema de saude",
