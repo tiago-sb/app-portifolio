@@ -15,7 +15,8 @@ const Project = () => {
       url: "./images/projetos/clone_dio.png",
       description: "Clone do site da instituição de ensino DIO em sua versão para computador, o porjeto lida com questões contudentes do dia dia envolvendo formulários, como por exemplo o login e o cadastro de usuários",
       languages: ["html", "css", "react", "styled components"],
-      repository: "https://github.com/tiago-sb/app-clone-dio"
+      repository: "https://github.com/tiago-sb/app-clone-dio",
+      deploy: "https://app-clone-dio.onrender.com/"
     },
     {
       name: "validation registration",
