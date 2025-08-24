@@ -5,7 +5,6 @@ import About from '../../components/about'
 import Habilities from '../../components/habilities'
 import Formation from '../../components/formation'
 import Projects from '../../components/projects'
-
 import './styles.css'
 
 const Home = () => {

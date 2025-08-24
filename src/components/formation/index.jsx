@@ -94,6 +94,24 @@ const Formation = () => {
                       </Card.Text>
                     </Card.Body>
                   </Card>
+                  <Card style={{ backgroundColor: '#2a29a4', border: 'none' }}>
+                    <Card.Body>
+                      <Card.Title style={{ color: '#fff', fontFamily: 'Bebas Neue' }}>
+                        GFT Start #7: Java - completo
+                      </Card.Title>
+                      <Card.Subtitle style={{ color: '#fff', fontFamily: 'Poppins' }}>
+                        DIO
+                      </Card.Subtitle>
+                      <Card.Text style={{ color: '#fff', fontFamily: 'Poppins' }}>
+                        Ao realizar o GFT #7 em Java, aprendi os fundamentos do java, 
+                        sua sintaxe e os princípios de programação orientada a objetos (POO). 
+                        Desenvolvi habilidades na criação de APIs utilizando Spring Boot e
+                        trabalhei com persistência de dados em bancos, estudei sobre os bancos relacionais e não relacionais
+                        e também tive contato com a AWS, entendendo como utilizar seus 
+                        serviços para hospedar e escalar aplicações.
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
                 </>
               ) : (
                 <Card style={{ backgroundColor: '#2a29a4', border: 'none' }}>

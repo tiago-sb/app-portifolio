@@ -1,6 +1,6 @@
 import ListGroup from 'react-bootstrap/ListGroup'
 import { Container, Row, Col, Figure, Button, Modal } from 'react-bootstrap'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 
 import {
   RiEmotionLine, RiFileWarningLine, RiShieldUserLine, RiSpeakLine,
@@ -8,8 +8,8 @@ import {
 } from 'react-icons/ri'
 import { FaDiscord, FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
 import { MdOutlineEmail } from 'react-icons/md'
-
 import '../../pages/home/styles.css'
+import { motion, useScroll, useTransform } from "framer-motion"
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -22,18 +22,29 @@ const About = () => {
     return () => clearTimeout(timer)
   }, [])
 
+  const ref = useRef(null)
+
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end start"]
+  })
+
+  const y = useTransform(scrollYProgress, [0, 1], [100, 0])
+  const opacity = useTransform(scrollYProgress, [0, 0.3], [0, 1])
+
   return (
     <>
       <section style={{ width: '100vw', paddingTop: 50, paddingBottom: 50 }}>
+        
         <h1
           id='about-me'
-          style={{ 
-            color: 'rgba(33, 37, 41, 0.75)', 
-            fontFamily: 'Bebas Neue', 
-            fontSize: 60, 
+          style={{
+            color: 'rgba(33, 37, 41, 0.75)',
+            fontFamily: 'Bebas Neue',
+            fontSize: 60,
             textAlign: 'center',
             paddingTop: 60,
-            paddingBottom: 60 
+            paddingBottom: 60
           }}
         >
           Sobre Mim
