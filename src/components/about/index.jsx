@@ -1,7 +1,7 @@
 import ListGroup from 'react-bootstrap/ListGroup'
 import { Container, Row, Col, Figure, Button, Modal } from 'react-bootstrap'
 import { useState, useRef } from 'react'
-import { motion, useInView } from "framer-motion"
+import { useInView } from "framer-motion"
 import {
   RiEmotionLine, RiFileWarningLine, RiShieldUserLine, RiSpeakLine,
   RiTeamLine, RiEmotionHappyLine, RiLightbulbLine, RiTimeLine
@@ -17,7 +17,6 @@ const About = ({ language, theme }) => {
   const c = Themes[theme]
 
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: '-100px' })
 
   const slideLeft = {
     hidden: { opacity: 0, x: -60 },
@@ -91,7 +90,8 @@ const About = ({ language, theme }) => {
 
               <Button style={{ fontFamily: 'Poppins', backgroundColor: c.primary, border: 'none', marginRight: 10, borderRadius: 20 }}>
                 <b>
-                  <a
+                  <a 
+                    rel="noreferrer"
                     href="https://drive.google.com/file/d/18-lGT5UKMxWOAttTNAxwhIfw_5_Spvgg/view?usp=sharing"
                     style={{ textDecoration: 'none', color: '#fff' }}
                     target="_blank"

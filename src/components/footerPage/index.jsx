@@ -1,4 +1,3 @@
-import { t } from 'i18next'
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import { FaInstagram, FaFacebook } from 'react-icons/fa'
