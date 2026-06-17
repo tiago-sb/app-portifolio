@@ -1,11 +1,16 @@
 import { useState } from 'react'
 import { Container, Nav, Card } from 'react-bootstrap';
+import { Translations } from '../translation/Translation';
+import { Themes } from '../theme/Themes';
 
-const Formation = () => {
+const Formation = ({language, theme}) => {
+  const t = Translations[language]
+  const c = Themes[theme]
+
   const [activeTab, setActiveTab] = useState("cursos");
 
   return (
-    <section style={{ width: '100vw', backgroundColor: '#2a29a4', paddingBottom: 50 }}>
+    <section style={{ width: '100vw', backgroundColor: c.primary, paddingBottom: 50 }}>
       <h1
         id='formation'
         style={{
@@ -17,7 +22,7 @@ const Formation = () => {
           paddingBottom: 50
         }}
       >
-        Formação
+        {t.formation.title}
       </h1>
       <Container>
         <div className='d-flex flex-row'>
@@ -28,7 +33,7 @@ const Formation = () => {
                 onClick={() => setActiveTab("faculdade")}
                 style={{ cursor: 'pointer', color: '#fff', fontFamily: 'Poppins' }}
               >
-                Faculdade
+                {t.formation.college}
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
@@ -37,7 +42,7 @@ const Formation = () => {
                 onClick={() => setActiveTab("cursos")}
                 style={{ cursor: 'pointer', color: '#fff', fontFamily: 'Poppins' }}
               >
-                Cursos
+                {t.formation.courses}
               </Nav.Link>
             </Nav.Item>
           </Nav>
@@ -45,89 +50,83 @@ const Formation = () => {
             {
               activeTab === "cursos" ? (
                 <>
-                  <Card style={{ backgroundColor: '#2a29a4', border: 'none' }}>
+                  <Card style={{ backgroundColor: c.primary, border: 'none' }}>
                     <Card.Body>
                       <Card.Title style={{ color: '#fff', fontFamily: 'Bebas Neue' }}>
-                        Formação TypeScript Fullstack Developer - Completo
+                        {t.formation.typescriptTitle}
                       </Card.Title>
                       <Card.Subtitle style={{ color: '#fff', fontFamily: 'Poppins' }}>
-                        DIO
+                        {t.formation.typescriptInstitution}
                       </Card.Subtitle>
                       <Card.Text style={{ color: '#fff', fontFamily: 'Poppins' }}>
-                        O curso de TypeScript na DIO forneceu uma base sólida para a
-                        utilização dessa linguagem que aprimora o JavaScript, tornando o
-                        código mais seguro, escalável e fácil de manter. Através de projetos práticos e exercícios,
-                        pude aprender a unir o conhecimento da área front-end com a de back-end na prática.
+                        {t.formation.typescriptDescription}
                       </Card.Text>
                     </Card.Body>
                   </Card>
-                  <Card style={{ backgroundColor: '#2a29a4', border: 'none' }}>
+                  <Card style={{ backgroundColor: c.primary, border: 'none' }}>
                     <Card.Body>
                       <Card.Title style={{ color: '#fff', fontFamily: 'Bebas Neue' }}>
-                        Formação React Developer - Completo
+                        {t.formation.reactTitle}
                       </Card.Title>
                       <Card.Subtitle style={{ color: '#fff', fontFamily: 'Poppins' }}>
-                        DIO
+                        {t.formation.reactInstitution}
                       </Card.Subtitle>
                       <Card.Text style={{ color: '#fff', fontFamily: 'Poppins' }}>
-                        Ao concluir o curso de React na DIO, pude obter uma visão abrangente sobre como construir
-                        interfaces dinâmicas e reutilizáveis utilizando uma das bibliotecas mais populares do mercado
-                        de tecnologia atual. O curso focou em conceitos fundamentais como componentes, hooks, estado
-                        e propriedades e ciclo de vida dos componentes.
+                        {t.formation.reactDescription}
                       </Card.Text>
                     </Card.Body>
                   </Card>
-                  <Card style={{ backgroundColor: '#2a29a4', border: 'none' }}>
+                  <Card style={{ backgroundColor: c.primary, border: 'none' }}>
                     <Card.Body>
                       <Card.Title style={{ color: '#fff', fontFamily: 'Bebas Neue' }}>
-                        Formação JavaScript Developer -  Completo
+                        {t.formation.javascriptTitle}
                       </Card.Title>
                       <Card.Subtitle style={{ color: '#fff', fontFamily: 'Poppins' }}>
-                        DIO
+                        {t.formation.javascriptInstitution}
                       </Card.Subtitle>
                       <Card.Text style={{ color: '#fff', fontFamily: 'Poppins' }}>
-                        Ao completar o curso de JavaScript na DIO, adiquiri uma compreensão profunda dos fundamentos dessa
-                        linguagem essencial para o desenvolvimento web. O curso abordou conceitos chave como tipos de dados,
-                        estruturas de controle, funções, arrays, objetos, e muito mais, com uma ênfase
-                        especial em boas práticas e legibilidade do código. Além disso, o curso proporcionou uma sólida
-                        base em manipulação do DOM e eventos, que são cruciais para a criação de interfaces dinâmicas e interativas.
+                        {t.formation.javascriptDescription}
                       </Card.Text>
                     </Card.Body>
                   </Card>
-                  <Card style={{ backgroundColor: '#2a29a4', border: 'none' }}>
+                  <Card style={{ backgroundColor: c.primary, border: 'none' }}>
                     <Card.Body>
                       <Card.Title style={{ color: '#fff', fontFamily: 'Bebas Neue' }}>
-                        GFT Start #7: Java - completo
+                        {t.formation.javaAndAITitle}
                       </Card.Title>
                       <Card.Subtitle style={{ color: '#fff', fontFamily: 'Poppins' }}>
-                        DIO
+                        {t.formation.javaAndAIInstitution}
                       </Card.Subtitle>
                       <Card.Text style={{ color: '#fff', fontFamily: 'Poppins' }}>
-                        Ao realizar o GFT #7 em Java, aprendi os fundamentos do java, 
-                        sua sintaxe e os princípios de programação orientada a objetos (POO). 
-                        Desenvolvi habilidades na criação de APIs utilizando Spring Boot e
-                        trabalhei com persistência de dados em bancos, estudei sobre os bancos relacionais e não relacionais
-                        e também tive contato com a AWS, entendendo como utilizar seus 
-                        serviços para hospedar e escalar aplicações.
+                        {t.formation.javaAndAIDescription}
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                  <Card style={{ backgroundColor: c.primary, border: 'none' }}>
+                    <Card.Body>
+                      <Card.Title style={{ color: '#fff', fontFamily: 'Bebas Neue' }}>
+                        {t.formation.javaTitle}
+                      </Card.Title>
+                      <Card.Subtitle style={{ color: '#fff', fontFamily: 'Poppins' }}>
+                        {t.formation.javaInstitution}
+                      </Card.Subtitle>
+                      <Card.Text style={{ color: '#fff', fontFamily: 'Poppins' }}>
+                        {t.formation.javaDescription}
                       </Card.Text>
                     </Card.Body>
                   </Card>
                 </>
               ) : (
-                <Card style={{ backgroundColor: '#2a29a4', border: 'none' }}>
+                <Card style={{ backgroundColor: c.primary, border: 'none' }}>
                   <Card.Body>
                     <Card.Title style={{ color: '#fff', fontFamily: 'Bebas Neue' }}>
-                      Bacharel em Ciência da Computação - Cursando
+                      {t.formation.degreeTitle}
                     </Card.Title>
                     <Card.Subtitle style={{ color: '#fff', fontFamily: 'Poppins' }}>
-                      UESB
+                      {t.formation.degreeInstitution}
                     </Card.Subtitle>
                     <Card.Text style={{ color: '#fff', fontFamily: 'Poppins' }}>
-                      Como estudante de ciência da computação, tem adquirido uma base sólida
-                      dos principais fundamentos da computação, isso inclui assuntos como algoritmos,
-                      estruturas de dados, teoria da computação interação humano-computador,
-                      dentre outros assuntos. Princípios estes que são muito valorizados e requisitados
-                      no mercado de programação da atualidade.
+                      {t.formation.degreeDescription}
                     </Card.Text>
                   </Card.Body>
                 </Card>

@@ -1,7 +1,24 @@
-.card {
-  transition: all ease-in-out .25s;
+.card-dark {
+  background-color: #1e293b !important;
+  border-color: #334155 !important;
+  color: #f1f5f9 !important;
 }
 
-.card:hover {
-  filter: brightness(80%);
+.modal-dark .modal-content {
+  background-color: #1e293b;
+  color: #f1f5f9;
+  border-color: #334155;
+}
+
+.modal-dark .modal-header {
+  background-color: #1e293b;
+  border-bottom-color: #334155;
+}
+
+.modal-dark .modal-body {
+  background-color: #1e293b;
+}
+
+.modal-dark .btn-close {
+  filter: invert(1);
 }

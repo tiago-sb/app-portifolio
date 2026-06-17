@@ -1,0 +1,25 @@
+.accordion-dark {
+  --bs-accordion-bg: #1e293b;
+  --bs-accordion-color: #f1f5f9;
+  --bs-accordion-border-color: #334155;
+  --bs-accordion-btn-color: #f1f5f9;
+  --bs-accordion-btn-bg: #1e293b;
+  --bs-accordion-active-bg: #0f172a;
+  --bs-accordion-active-color: #f1f5f9;
+}
+
+/* o botão do header tem background próprio que precisa ser forçado */
+.accordion-dark .accordion-button {
+  background-color: #1e293b;
+  color: #f1f5f9;
+  box-shadow: none;
+}
+
+.accordion-dark .accordion-button:not(.collapsed) {
+  background-color: #0f172a;
+  color: #f1f5f9;
+}
+
+.accordion-dark .accordion-button::after {
+  filter: invert(1);
+}

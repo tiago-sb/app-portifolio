@@ -1,0 +1,128 @@
+{
+  "navbar": {
+    "about": "Sobre Mí",
+    "skills": "Habilidades",
+    "education": "Formación",
+    "projects": "Proyectos",
+    "language": "idioma",
+    "theme": "Tema",
+    "light": "Por supuesto",
+    "dark": "Oscuro"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "name": "Tiago Santos Bela",
+    "description01": "Soy estudiante de Ciencias de la Computación y entusiasta del desarrollo de software. Desde temprana edad he mostrado interés por la tecnología y la resolución de problemas, buscando constantemente transformar ideas en soluciones prácticas y funcionales.",
+    "description02": "A lo largo de mi formación en la UESB, he desarrollado competencias técnicas y analíticas en programación, estructuración de sistemas, robótica, prototipado, gestión de equipos, hardware y buenas prácticas de desarrollo. Estoy comprometido con el aprendizaje continuo y busco evolucionar tanto en el aspecto técnico como en la capacidad de construir soluciones eficientes, escalables y bien estructuradas.",
+    "openCV": "Abrir CV",
+    "contact": "Contactar",
+    "contactTitle": "Formas de Contacto"
+  },
+  "skills": {
+    "title": "Competencias",
+    "subtitle": "Algunas de mis habilidades blandas que pueden contribuir al entorno laboral empresarial",
+    "communication": "Comunicación",
+    "empathy": "Empatía",
+    "teamwork": "Trabajo en Equipo",
+    "criticalThinking": "Pensamiento Crítico",
+    "timeManagement": "Gestión del Tiempo",
+    "adaptability": "Adaptabilidad",
+    "problemSolving": "Resolución de Problemas",
+    "emotionalIntelligence": "Inteligencia Emocional"
+  },
+  "habilities": {
+    "title": "Habilidades",
+    "frontend": "Front-End",
+    "backend": "Back-End",
+    "other": "Otras Tecnologías",
+    "html": "HTML es el lenguaje de marcado estándar utilizado para estructurar contenido en la web.",
+    "css": "CSS se utiliza para aplicar estilos, colores, fuentes y diseños a las páginas web.",
+    "javascript": "JavaScript es un lenguaje de programación ampliamente utilizado en el desarrollo web.",
+    "typescript": "TypeScript es un superconjunto de JavaScript que añade tipado estático.",
+    "react": "React es una biblioteca JavaScript para crear interfaces modernas y reutilizables.",
+    "node": "Node.js permite ejecutar JavaScript fuera del navegador utilizando el motor V8.",
+    "java": "Java es un lenguaje orientado a objetos y multiplataforma utilizado en todo el mundo.",
+    "cpp": "C++ es un lenguaje compilado multiparadigma utilizado para aplicaciones de alto rendimiento.",
+    "haskell": "Haskell es un lenguaje funcional con tipado estático fuerte.",
+    "prolog": "Prolog es un lenguaje basado en lógica formal utilizado en inteligencia artificial.",
+    "sql": "SQL es un lenguaje para almacenar, consultar y manipular datos en bases de datos relacionales."
+  },
+  "formation": {
+    "title": "Formación",
+    "college": "Universidad",
+    "courses": "Cursos",
+    "degreeTitle": "Licenciatura en Ciencias de la Computación - En Curso",
+    "degreeInstitution": "UESB",
+    "degreeDescription": "Como estudiante de Ciencias de la Computación, he adquirido una base sólida en algoritmos, estructuras de datos, teoría de la computación, interacción humano-computadora y otros temas fundamentales altamente valorados en el mercado tecnológico.",
+    "typescriptTitle": "Programa Fullstack Developer con TypeScript - Completo",
+    "typescriptInstitution": "DIO",
+    "typescriptDescription": "El curso de TypeScript me proporcionó una base sólida para desarrollar aplicaciones más seguras, escalables y mantenibles, integrando conocimientos de front-end y back-end.",
+    "reactTitle": "Programa React Developer - Completo",
+    "reactInstitution": "DIO",
+    "reactDescription": "Obtuve una visión completa sobre la creación de interfaces dinámicas y reutilizables utilizando React, aprendiendo componentes, hooks, estado, propiedades y ciclo de vida.",
+    "javascriptTitle": "Programa JavaScript Developer - Completo",
+    "javascriptInstitution": "DIO",
+    "javascriptDescription": "El curso abordó los fundamentos de JavaScript, incluyendo tipos de datos, estructuras de control, funciones, arrays, objetos, manipulación del DOM, eventos y buenas prácticas.",
+    "javaTitle": "GFT Start #7: Java - Completo",
+    "javaInstitution": "DIO",
+    "javaDescription": "Aprendí fundamentos de Java, programación orientada a objetos, desarrollo de APIs con Spring Boot, persistencia de datos, bases de datos relacionales y no relacionales, además de conceptos de AWS.",
+    "javaAndAITitle": "Globant - Java & Spring Boot AI Developer - Completo",
+    "javaAndAIInstitution": "DIO",
+    "javaAndAIDescription": "Curso fullstack enfocado en Java e Inteligencia Artificial. Abarca orientación a objetos, pruebas automatizadas y patrones de diseño con Java, además de ingeniería de prompts y desarrollo de agentes con IA. Incluye proyectos prácticos integrando ambas áreas."
+  },
+  "projects": {
+    "title": "Proyectos",
+    "items": [
+      {
+        "name": "Website Clothing",
+        "description": "Proyecto enfocado en mejorar habilidades de desarrollo front-end mediante una tienda virtual de ropa."
+      },
+      {
+        "name": "Clon DIO",
+        "description": "Clon de la versión de escritorio del sitio de DIO con autenticación y registro de usuarios."
+      },
+      {
+        "name": "Validation Registration",
+        "description": "Aplicación enfocada en autenticación de usuarios y validación de formularios."
+      },
+      {
+        "name": "Calculadora",
+        "description": "Aplicación web para realizar cálculos aritméticos desarrollada con React."
+      },
+      {
+        "name": "User Find GitHub",
+        "description": "Proyecto que permite buscar perfiles de GitHub y visualizar información relevante."
+      },
+      {
+        "name": "Website Academy",
+        "description": "Sitio web institucional para gimnasios desarrollado con React y Bootstrap."
+      },
+      {
+        "name": "Pokédex",
+        "description": "Aplicación que consume la API REST PokeAPI para mostrar información de Pokémon."
+      },
+      {
+        "name": "Love Films",
+        "description": "Aplicación para buscar películas utilizando una API externa."
+      },
+      {
+        "name": "Sistema de Salud",
+        "description": "Sistema de apoyo a la vacunación para mejorar la gestión en centros de salud."
+      },
+      {
+        "name": "App Budgeting",
+        "description": "Aplicación de control financiero por voz. El usuario envía un audio describiendo una transacción, y la IA transcribe, interpreta y registra automáticamente."
+      },
+      {
+        "name": "App E-commerce Sale",
+        "description": "Sistema ERP enfocado en ropa, desarrollado como proyecto fullstack compuesto por un backend en Spring Boot y un frontend en TypeScript usando Vite. El objetivo es simular un sistema de gestión de ventas de productos, permitiendo el registro de productos, el registro de ventas y la visualización de métricas a través de un dashboard."
+      }
+    ]
+  },
+  "footer": {
+    "followMe": "¡Mantente al día, sígueme!",
+    "contact": "Contacto",
+    "portfolio": "Portafolio",
+    "copyright": "© Tiago Bela Producciones"
+  }
+}

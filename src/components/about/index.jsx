@@ -1,45 +1,61 @@
 import ListGroup from 'react-bootstrap/ListGroup'
 import { Container, Row, Col, Figure, Button, Modal } from 'react-bootstrap'
-import { useEffect, useState, useRef } from 'react'
-
+import { useState, useRef } from 'react'
+import { motion, useInView } from "framer-motion"
 import {
   RiEmotionLine, RiFileWarningLine, RiShieldUserLine, RiSpeakLine,
   RiTeamLine, RiEmotionHappyLine, RiLightbulbLine, RiTimeLine
 } from 'react-icons/ri'
 import { FaDiscord, FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
 import { MdOutlineEmail } from 'react-icons/md'
-import '../../pages/home/styles.css'
-import { motion, useScroll, useTransform } from "framer-motion"
+import { Translations } from '../translation/Translation'
+import { Themes } from '../theme/Themes'
 
-const About = () => {
-  const [isVisible, setIsVisible] = useState(false)
+const About = ({ language, theme }) => {
   const [show, setShow] = useState(false)
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsVisible(true)
-    }, 100)
-    return () => clearTimeout(timer)
-  }, [])
+  const t = Translations[language]
+  const c = Themes[theme]
 
   const ref = useRef(null)
+  const isInView = useInView(ref, { once: true, margin: '-100px' })
 
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start end", "end start"]
-  })
+  const slideLeft = {
+    hidden: { opacity: 0, x: -60 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.7, ease: 'easeOut' } }
+  }
 
-  const y = useTransform(scrollYProgress, [0, 1], [100, 0])
-  const opacity = useTransform(scrollYProgress, [0, 0.3], [0, 1])
+  const slideRight = {
+    hidden: { opacity: 0, x: 60 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.7, ease: 'easeOut' } }
+  }
+
+  const contacts = [
+    { icon: <FaInstagram />,    href: "https://www.instagram.com/tiagobela.js/", label: "Instagram" },
+    { icon: <FaLinkedin />,     href: "https://www.linkedin.com/in/tiago-bela-215103238/", label: "LinkedIn" },
+    { icon: <MdOutlineEmail />, href: "https://criarmeulink.com.br/u/1690329618", label: "Email" },
+    { icon: <FaDiscord />,      href: "https://discord.com/login?redirect_to=%2Fchannels%2F%40me%2F964609060173389864", label: "Discord" },
+    { icon: <FaFacebook />,     href: "https://www.facebook.com/profile.php?id=100018877909315", label: "Facebook" },
+    { icon: <FaWhatsapp />,     href: "https://wa.link/c70ad6", label: "WhatsApp" },
+  ]
+
+  const skills = [
+    { icon: <RiSpeakLine />,        label: t.skills.communication },
+    { icon: <RiEmotionHappyLine />, label: t.skills.empathy },
+    { icon: <RiTeamLine />,         label: t.skills.teamwork },
+    { icon: <RiLightbulbLine />,    label: t.skills.criticalThinking },
+    { icon: <RiTimeLine />,         label: t.skills.timeManagement },
+    { icon: <RiShieldUserLine />,   label: t.skills.adaptability },
+    { icon: <RiFileWarningLine />,  label: t.skills.problemSolving },
+    { icon: <RiEmotionLine />,      label: t.skills.emotionalIntelligence },
+  ]
 
   return (
     <>
-      <section style={{ width: '100vw', paddingTop: 50, paddingBottom: 50 }}>
-        
+      <section style={{ width: '100vw', paddingTop: 50, paddingBottom: 50, backgroundColor: c.background }}>
         <h1
-          id='about-me'
+          id="about-me"
           style={{
-            color: 'rgba(33, 37, 41, 0.75)',
+            color: c.text,
             fontFamily: 'Bebas Neue',
             fontSize: 60,
             textAlign: 'center',
@@ -47,11 +63,12 @@ const About = () => {
             paddingBottom: 60
           }}
         >
-          Sobre Mim
+          {t.about.title}
         </h1>
-        <Container>
+
+        <Container ref={ref}>
           <Row>
-            <Col className={`fade-in ${isVisible ? 'visible' : ''}`}>
+            <Col>
               <Figure>
                 <Figure.Image
                   alt="foto tiago bela"
@@ -60,178 +77,82 @@ const About = () => {
                 />
               </Figure>
             </Col>
-            <Col className={`fade-in ${isVisible ? 'visible' : ''}`}>
-              <h2 style={{ fontFamily: 'Bebas Neue', color: 'rgba(33, 37, 41, 0.75)' }}>
-                Tiago Santos Bela
+
+            <Col>
+              <h2 style={{ fontFamily: 'Bebas Neue', color: c.text }}>
+                {t.about.name}
               </h2>
-              <p style={{ fontFamily: 'Poppins', color: 'rgba(33, 37, 41, 0.75)' }}>
-                Um desenvolvedor de software brasileiro apaixonado por
-                programação que está se graduando no curso de ciência da computação.
-                Visando aperfeiçoar suas habilidades e conhecimentos na área da tecnologia
-                tem lidado constantemente com projetos que irão torná-lo um profissional
-                de excelência que está em constante evolução esculpindo uma carreira
-                com inovação e criatividade.
+              <p style={{ fontFamily: 'Poppins', color: c.text }}>
+                {t.about.description01}
               </p>
-              <p style={{ fontFamily: 'Poppins', color: 'rgba(33, 37, 41, 0.75)' }}>
-                Busca oportunidades na área de desenvolvimento. Principalmente vagas na
-                senioridade de estagiário/júnior na área da programação web. Seu principal
-                o objetivo é colocar em prática todo conhecimento que tem aprendido e
-                praticado regularmente, para dessa forma evoluir e construir uma excelente
-                carreira na área do desenvolvimento.
+              <p style={{ fontFamily: 'Poppins', color: c.text }}>
+                {t.about.description02}
               </p>
-              <Button style={{ fontFamily: 'Poppins', backgroundColor: '#2a29a4', border: 'none', marginRight: 10, borderRadius: 20 }} >
+
+              <Button style={{ fontFamily: 'Poppins', backgroundColor: c.primary, border: 'none', marginRight: 10, borderRadius: 20 }}>
                 <b>
                   <a
-                    href="https://drive.google.com/file/d/11HVSXXWGWhdGl1u1XXJZBGL_zj14K7c4/view?usp=drive_link"
+                    href="https://drive.google.com/file/d/18-lGT5UKMxWOAttTNAxwhIfw_5_Spvgg/view?usp=sharing"
                     style={{ textDecoration: 'none', color: '#fff' }}
-                    target='_blank'
+                    target="_blank"
                   >
-                    Abrir CV
+                    {t.about.openCV}
                   </a>
                 </b>
               </Button>
-              <Button style={{ fontFamily: 'Poppins', backgroundColor: '#2a29a4', border: 'none', marginRight: 10, borderRadius: 20 }} >
-                <b onClick={() => setShow(true)}>
-                  Entrar em Contato
-                </b>
+
+              <Button
+                style={{ fontFamily: 'Poppins', backgroundColor: c.primary, border: 'none', marginRight: 10, borderRadius: 20 }}
+                onClick={() => setShow(true)}
+              >
+                <b>{t.about.contact}</b>
               </Button>
+
               <Modal
                 show={show}
                 onHide={() => setShow(false)}
-                dialogClassName="modal-90w"
-                aria-labelledby="example-custom-modal-styling-title"
+                aria-labelledby="contact-modal-title"
               >
                 <Modal.Header closeButton>
-                  <Modal.Title id="example-custom-modal-styling-title">
-                    Formas de Contato
+                  <Modal.Title id="contact-modal-title">
+                    {t.about.contactTitle}
                   </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                  <p>
-                    <FaInstagram style={{ marginRight: 10 }} />
-                    <a
-                      href="https://www.instagram.com/tiagobella.05/"
-                      target='_blank'
-                      style={{ color: '#000', textDecoration: 'none' }}
-                    >
-                      Instagram
-                    </a>
-                  </p>
-                  <p>
-                    <FaLinkedin style={{ marginRight: 10 }} />
-                    <a
-                      href="https://www.linkedin.com/in/tiago-bela-215103238/"
-                      target='_blank'
-                      style={{ color: '#000', textDecoration: 'none' }}
-                    >
-                      LinkedIn
-                    </a>
-                  </p>
-                  <p>
-                    <MdOutlineEmail style={{ marginRight: 10 }} />
-                    <a
-                      href="https://criarmeulink.com.br/u/1690329618"
-                      target='_blank'
-                      style={{ color: '#000', textDecoration: 'none' }}
-                    >
-                      Email
-                    </a>
-                  </p>
-                  <p>
-                    <FaDiscord style={{ marginRight: 10 }} />
-                    <a
-                      href="https://discord.com/login?redirect_to=%2Fchannels%2F%40me%2F964609060173389864"
-                      target='_blank'
-                      style={{ color: '#000', textDecoration: 'none' }}
-                    >
-                      Discord
-                    </a>
-                  </p>
-                  <p>
-                    <FaFacebook style={{ marginRight: 10 }} />
-                    <a
-                      href="https://www.facebook.com/profile.php?id=100018877909315"
-                      target='_blank'
-                      style={{ color: '#000', textDecoration: 'none' }}
-                    >
-                      Facebook
-                    </a>
-                  </p>
-                  <p>
-                    <FaWhatsapp style={{ marginRight: 10 }} />
-                    <a
-                      href="https://wa.link/c70ad6"
-                      target='_blank'
-                      style={{ color: '#000', textDecoration: 'none' }}
-                    >
-                      Whatssap
-                    </a>
-                  </p>
+                  {contacts.map(({ icon, href, label }) => (
+                    <p key={label}>
+                      <span style={{ marginRight: 10 }}>{icon}</span>
+                      <a href={href} target="_blank" style={{ color: '#000', textDecoration: 'none' }}>
+                        {label}
+                      </a>
+                    </p>
+                  ))}
                 </Modal.Body>
               </Modal>
             </Col>
           </Row>
         </Container>
       </section>
-      <section style={{ width: '100vw', backgroundColor: '#2a29a4', paddingTop: 50, paddingBottom: 50 }}>
+
+      <section style={{ width: '100vw', backgroundColor: c.primary, paddingTop: 50, paddingBottom: 50 }}>
         <Container style={{ padding: 10 }}>
-          <Row className={`fade-in ${isVisible ? 'visible' : ''}`}>
+          <Row>
             <h2 style={{ fontFamily: 'Bebas Neue', color: '#fff' }}>
-              Competências
+              {t.skills.title}
             </h2>
             <p style={{ fontFamily: 'Poppins', color: '#fff' }}>
-              Algumas de minhas soft skills que podem contribuir com o ambiente de trabalho
-              empresarial
+              {t.skills.subtitle}
             </p>
             <ListGroup>
-              <ListGroup.Item style={{ background: 'none', color: '#fff', fontWeight: 'bold' }}>
-                <RiSpeakLine />
-                <span style={{ margin: 10 }}>
-                  Comunicação
-                </span>
-              </ListGroup.Item>
-              <ListGroup.Item style={{ background: 'none', color: '#fff', fontWeight: 'bold' }}>
-                <RiEmotionHappyLine />
-                <span style={{ margin: 10 }}>
-                  Empatia
-                </span>
-              </ListGroup.Item>
-              <ListGroup.Item style={{ background: 'none', color: '#fff', fontWeight: 'bold' }}>
-                <RiTeamLine />
-                <span style={{ margin: 10 }}>
-                  Trabalho em equipe
-                </span>
-              </ListGroup.Item>
-              <ListGroup.Item style={{ background: 'none', color: '#fff', fontWeight: 'bold' }}>
-                <RiLightbulbLine />
-                <span style={{ margin: 10 }}>
-                  Pensamento Crítico
-                </span>
-              </ListGroup.Item>
-              <ListGroup.Item style={{ background: 'none', color: '#fff', fontWeight: 'bold' }}>
-                <RiTimeLine />
-                <span style={{ margin: 10 }}>
-                  Gestão do Tempo
-                </span>
-              </ListGroup.Item>
-              <ListGroup.Item style={{ background: 'none', color: '#fff', fontWeight: 'bold' }}>
-                <RiShieldUserLine />
-                <span style={{ margin: 10 }}>
-                  Adaptabilidade
-                </span>
-              </ListGroup.Item>
-              <ListGroup.Item style={{ background: 'none', color: '#fff', fontWeight: 'bold' }}>
-                <RiFileWarningLine />
-                <span style={{ margin: 10 }}>
-                  Resolução de Problemas
-                </span>
-              </ListGroup.Item>
-              <ListGroup.Item style={{ background: 'none', color: '#fff', fontWeight: 'bold' }}>
-                <RiEmotionLine />
-                <span style={{ margin: 10 }}>
-                  Inteligência Emocional
-                </span>
-              </ListGroup.Item>
+              {skills.map(({ icon, label }) => (
+                <ListGroup.Item
+                  key={label}
+                  style={{ background: 'none', color: '#fff', fontWeight: 'bold', border: 'none' }}
+                >
+                  {icon}
+                  <span style={{ margin: 10 }}>{label}</span>
+                </ListGroup.Item>
+              ))}
             </ListGroup>
           </Row>
         </Container>

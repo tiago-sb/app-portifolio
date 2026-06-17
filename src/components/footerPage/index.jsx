@@ -1,19 +1,23 @@
+import { t } from 'i18next'
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import { FaInstagram, FaFacebook } from 'react-icons/fa'
 import { FaSquareXTwitter } from 'react-icons/fa6'
+import { Translations } from '../translation/Translation'
 
-const FooterPage = () => {
+const FooterPage = ({language, theme}) => {
+  const t = Translations[language]
+  
   return (
-    <footer style={{ backgroundColor: '#2a29a4' }} 
+    <footer style={{ backgroundColor: '#4f46e5' }} 
       className={`text-white py-3`}>
       <Container>
         <Row>
           <Col>
             <h2 style={{ fontFamily: 'Bebas Neue' }}>
-              fique por dentro, siga-me!
+              {t.footer.followMe}
             </h2>
-            <a href="https://www.instagram.com/tiagobella.05/" target='_blank' style={{ color: 'white' }}>
+            <a href="https://www.instagram.com/tiagobela.js/" target='_blank' style={{ color: 'white' }}>
               <FaInstagram size={24} style={{ margin: 5 }} />
             </a>
             <a href="https://x.com/wtftsb_" target='_blank' style={{ color: 'white' }}>
@@ -28,7 +32,7 @@ const FooterPage = () => {
         <Row>
           <Col>
             <h2 style={{ fontFamily: 'Bebas Neue' }}>
-              contato
+              {t.footer.contact}
             </h2>
             <Col>
               <a href="https://api.whatsapp.com/send?phone=5577999662311&text=Ola" 
@@ -45,14 +49,14 @@ const FooterPage = () => {
           </Col>
           <Col className="text-end">
             <h2 style={{ fontFamily: 'Bebas Neue' }}>
-              portfolio
+              {t.footer.portfolio}
             </h2>
           </Col>
 
         </Row>
         <Row>
           <Col className="text-center" style={{ fontFamily: 'Poppins', marginTop: 20 }}>
-            <p >© Tiago Bela Produções</p>
+            <p>{t.footer.copyright}</p>
           </Col>
         </Row>
       </Container>

@@ -1,0 +1,128 @@
+{
+  "navbar": {
+    "about": "About Me",
+    "skills": "Skills",
+    "education": "Education",
+    "projects": "Projects",
+    "language": "language",
+    "theme": "Theme",
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "about": {
+    "title": "About Me",
+    "name": "Tiago Santos Bela",
+    "description01": "I am a Computer Science student and a software development enthusiast. Since an early age, I have shown interest in technology and problem-solving, constantly seeking to transform ideas into practical and functional solutions.",
+    "description02": "Throughout my studies at UESB, I have been developing technical and analytical skills in programming, systems architecture, robotics, prototyping, team management, hardware, and software development best practices. I am committed to continuous learning and strive to evolve both technically and in my ability to build efficient, scalable, and well-structured solutions.",
+    "openCV": "Open Resume",
+    "contact": "Contact Me",
+    "contactTitle": "Contact Information"
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "Some of my soft skills that can contribute positively to a professional work environment",
+    "communication": "Communication",
+    "empathy": "Empathy",
+    "teamwork": "Teamwork",
+    "criticalThinking": "Critical Thinking",
+    "timeManagement": "Time Management",
+    "adaptability": "Adaptability",
+    "problemSolving": "Problem Solving",
+    "emotionalIntelligence": "Emotional Intelligence"
+  },
+  "habilities": {
+    "title": "Skills",
+    "frontend": "Front-End",
+    "backend": "Back-End",
+    "other": "Other Technologies",
+    "html": "HTML is the standard markup language used to structure content on the web.",
+    "css": "CSS is used to style web pages by controlling colors, spacing, fonts and layouts.",
+    "javascript": "JavaScript is a versatile programming language widely used in web development.",
+    "typescript": "TypeScript is a superset of JavaScript that adds static typing.",
+    "react": "React is a JavaScript library for building modern and reusable user interfaces.",
+    "node": "Node.js allows JavaScript execution outside the browser using Google's V8 engine.",
+    "java": "Java is an object-oriented and cross-platform programming language used worldwide.",
+    "cpp": "C++ is a compiled multi-paradigm programming language widely used for high-performance applications.",
+    "haskell": "Haskell is a strongly typed functional programming language.",
+    "prolog": "Prolog is a logic programming language commonly used in artificial intelligence.",
+    "sql": "SQL is used to store, query and manipulate relational database data."
+  },
+  "formation": {
+    "title": "Education",
+    "college": "University",
+    "courses": "Courses",
+    "degreeTitle": "Bachelor's Degree in Computer Science - In Progress",
+    "degreeInstitution": "UESB",
+    "degreeDescription": "As a Computer Science student, I have built a solid foundation in core computing concepts, including algorithms, data structures, computation theory, human-computer interaction, and other essential topics highly valued in the technology industry.",
+    "typescriptTitle": "TypeScript Fullstack Developer Program - Completed",
+    "typescriptInstitution": "DIO",
+    "typescriptDescription": "The TypeScript program at DIO provided a strong foundation in using TypeScript to build safer, scalable, and maintainable applications while integrating front-end and back-end development concepts.",
+    "reactTitle": "React Developer Program - Completed",
+    "reactInstitution": "DIO",
+    "reactDescription": "This program provided comprehensive knowledge of React, covering components, hooks, state management, props, and lifecycle concepts for building dynamic and reusable user interfaces.",
+    "javascriptTitle": "JavaScript Developer Program - Completed",
+    "javascriptInstitution": "DIO",
+    "javascriptDescription": "The JavaScript program covered core language concepts such as data types, control structures, functions, arrays, objects, DOM manipulation, events, and software development best practices.",
+    "javaTitle": "GFT Start #7: Java - Completed",
+    "javaInstitution": "DIO",
+    "javaDescription": "Learned Java fundamentals, object-oriented programming, Spring Boot API development, database persistence, relational and non-relational databases, and AWS cloud fundamentals.",
+    "javaAndAITitle": "Globant - Java & Spring Boot AI Developer - Completed",
+    "javaAndAIInstitution": "DIO",
+    "javaAndAIDescription": "Fullstack course focused on Java and Artificial Intelligence. Covers object-oriented programming, automated testing and design patterns with Java, as well as prompt engineering and AI agent development. Includes hands-on projects integrating both areas."
+  },
+  "projects": {
+    "title": "Projects",
+    "items": [
+      {
+        "name": "Website Clothing",
+        "description": "Project focused on improving front-end development skills through an online clothing store with shopping cart and checkout features."
+      },
+      {
+        "name": "DIO Clone",
+        "description": "Desktop version clone of DIO's website featuring authentication and registration forms."
+      },
+      {
+        "name": "Validation Registration",
+        "description": "Application focused on user authentication and form validation."
+      },
+      {
+        "name": "Calculator",
+        "description": "Web calculator application built with React and Styled Components."
+      },
+      {
+        "name": "User Find GitHub",
+        "description": "Application that searches GitHub profiles and displays repositories and user information."
+      },
+      {
+        "name": "Website Academy",
+        "description": "Gym website project built with React and Bootstrap."
+      },
+      {
+        "name": "Pokédex",
+        "description": "Application that consumes the PokeAPI REST API to display Pokémon information."
+      },
+      {
+        "name": "Love Films",
+        "description": "Movie search application integrated with a movie information API."
+      },
+      {
+        "name": "Healthcare System",
+        "description": "Vaccination management system designed to improve communication between patients and healthcare units."
+      },
+      {
+        "name": "App Budgeting",
+        "description": "Voice-based financial control app. The user sends an audio describing a transaction, and the AI automatically transcribes, interprets, and records it."
+      },
+      {
+        "name": "App E-commerce Sale",
+        "description": "ERP system focused on clothing, developed as a fullstack project consisting of a Spring Boot backend and a TypeScript frontend using Vite. The goal is to simulate a product sales management system, allowing product registration, sales recording, and metrics visualization through a dashboard."
+      }
+    ]
+  },
+  "footer": {
+    "followMe": "Stay updated, follow me!",
+    "contact": "Contact",
+    "portfolio": "Portfolio",
+    "copyright": "© Tiago Bela Productions"
+  }
+}
