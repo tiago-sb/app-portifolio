@@ -5,6 +5,7 @@
     "education": "Formación",
     "projects": "Proyectos",
     "language": "idioma",
+    "timeline": "Trayectoria",
     "theme": "Tema",
     "light": "Por supuesto",
     "dark": "Oscuro"
@@ -117,6 +118,25 @@
         "name": "App E-commerce Sale",
         "description": "Sistema ERP enfocado en ropa, desarrollado como proyecto fullstack compuesto por un backend en Spring Boot y un frontend en TypeScript usando Vite. El objetivo es simular un sistema de gestión de ventas de productos, permitiendo el registro de productos, el registro de ventas y la visualización de métricas a través de un dashboard."
       }
+    ]
+  },
+  "timeline": {
+    "education": "Carrera",
+    "research": "Investigación",
+    "training": "Formación",
+    "current": "actualidad",
+    "inProgress": "En progreso",
+    "finished": "Completado",
+    "sectionTitle": "Trayectoria",
+    "items": [
+      { "period": "04.2026 – 05.2026", "title": "Globant Java & Spring Boot AI", "category": "training" },
+      { "period": "10.2025 – actualidad", "title": "Proyecto LARA – Iniciación Científica: web", "category": "research", "current": true },
+      { "period": "07.2025 – 08.2025", "title": "GFT #7 – Java", "category": "training" },
+      { "period": "10.2024 – 09.2025", "title": "Proyecto LARA – Iniciación Científica: robótica", "category": "research" },
+      { "period": "02.2024 – 03.2024", "title": "Formación React Developer", "category": "training" },
+      { "period": "01.2024 – 02.2024", "title": "Formación JavaScript Developer", "category": "training" },
+      { "period": "12.2023 – 01.2024", "title": "Formación TypeScript Fullstack Developer", "category": "training" },
+      { "period": "02.2023 – actualidad", "title": "Grado en Ciencias de la Computación – UESB", "category": "education", "current": true }
     ]
   },
   "footer": {

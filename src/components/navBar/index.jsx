@@ -49,6 +49,9 @@ const NavBar = ({ language, setLanguage, theme, setTheme }) => {
             <Nav.Link href="#projects" style={{ color: c.text }}>
               {t.navbar.projects}
             </Nav.Link>
+            <Nav.Link href="#trajectory" style={{ color: c.text }}>
+              {t.navbar.timeline}
+            </Nav.Link>
           </Nav>
 
           <div className="d-flex align-items-center gap-1">

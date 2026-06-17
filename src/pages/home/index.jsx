@@ -6,6 +6,8 @@ import About from '../../components/about'
 import Habilities from '../../components/habilities'
 import Formation from '../../components/formation'
 import Projects from '../../components/projects'
+import TimeLine from '../../components/timeline/TimeLine'
+import BackToTop from '../../components/button/BackToTop'
 import { AnimatePresence, motion } from 'framer-motion'
 import './index.css'
 
@@ -27,7 +29,9 @@ const Home = () => {
         <Habilities language={language} theme={theme} />
         <Formation language={language} theme={theme} />
         <Projects language={language} theme={theme} />
+        <TimeLine language={language} theme={theme}/>
         <FooterPage language={language} theme={theme} />
+        <BackToTop theme={theme} />
       </motion.div>
     </>
   )

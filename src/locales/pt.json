@@ -5,6 +5,7 @@
     "education": "Formação",
     "projects": "Projetos",
     "language": "Idioma",
+    "timeline": "Trejetória",
     "theme": "Tema",
     "light": "Claro",
     "dark": "Escuro"
@@ -35,50 +36,40 @@
     "frontend": "Front-End",
     "backend": "Back-End",
     "other": "Outras Tecnologias",
-
     "html": "HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o significado e a estrutura do conteúdo da web.",
     "css": "CSS (Folhas de Estilo em Cascata) é um mecanismo para adicionar estilos como cores, fontes e espaçamentos a páginas web.",
     "javascript": "JavaScript é uma linguagem de programação interpretada, multiparadigma e amplamente utilizada para desenvolvimento web.",
     "typescript": "TypeScript é um superconjunto do JavaScript que adiciona tipagem estática opcional.",
     "react": "React é uma biblioteca JavaScript para criação de interfaces de usuário modernas e reutilizáveis.",
-
     "node": "Node.js permite executar JavaScript fora do navegador utilizando o motor V8 do Google.",
     "java": "Java é uma linguagem orientada a objetos, multiplataforma e utilizada em bilhões de dispositivos.",
-
     "cpp": "C++ é uma linguagem compilada, multiparadigma e amplamente utilizada em sistemas e aplicações de alto desempenho.",
     "haskell": "Haskell é uma linguagem funcional com tipagem estática forte.",
     "prolog": "Prolog é uma linguagem baseada em lógica formal utilizada para resolução de problemas e inteligência artificial.",
     "sql": "SQL é uma linguagem utilizada para armazenar, consultar e manipular dados em bancos relacionais."
   },
   "formation": {
-  "title": "Formação",
+    "title": "Formação",
     "college": "Faculdade",
     "courses": "Cursos",
-    
     "degreeTitle": "Bacharel em Ciência da Computação - Cursando",
     "degreeInstitution": "UESB",
     "degreeDescription": "Como estudante de Ciência da Computação, tenho adquirido uma base sólida dos principais fundamentos da computação, incluindo algoritmos, estruturas de dados, teoria da computação, interação humano-computador e diversos outros temas essenciais. Esses conhecimentos são altamente valorizados e requisitados no mercado de tecnologia atual.",
-    
     "typescriptTitle": "Formação TypeScript Fullstack Developer - Completo",
     "typescriptInstitution": "DIO",
     "typescriptDescription": "O curso de TypeScript na DIO forneceu uma base sólida para utilização dessa linguagem que aprimora o JavaScript, tornando o código mais seguro, escalável e fácil de manter. Por meio de projetos práticos e exercícios, pude integrar conhecimentos de front-end e back-end.",
-    
     "reactTitle": "Formação React Developer - Completo",
     "reactInstitution": "DIO",
     "reactDescription": "Ao concluir o curso de React na DIO, obtive uma visão abrangente sobre a construção de interfaces dinâmicas e reutilizáveis utilizando uma das bibliotecas mais populares do mercado. O curso abordou componentes, hooks, gerenciamento de estado, propriedades e ciclo de vida.",
-
     "javascriptTitle": "Formação JavaScript Developer - Completo",
     "javascriptInstitution": "DIO",
     "javascriptDescription": "Ao completar o curso de JavaScript na DIO, adquiri uma compreensão profunda dos fundamentos da linguagem, incluindo tipos de dados, estruturas de controle, funções, arrays, objetos, manipulação do DOM, eventos e boas práticas de desenvolvimento.",
-
     "javaTitle": "GFT Start #7: Java - Completo",
     "javaInstitution": "DIO",
     "javaDescription": "Aprendi fundamentos de Java, programação orientada a objetos, desenvolvimento de APIs com Spring Boot, persistência de dados, bancos relacionais e não relacionais, além de conceitos básicos de AWS para hospedagem e escalabilidade de aplicações.",
-
     "javaAndAITitle": "Globant - Java & Spring Boot AI Developer -Completo",
     "javaAndAIInstitution": "DIO",
     "javaAndAIDescription": "Curso fullstack com foco em Java e Inteligência Artificial. Abrange orientação a objetos, testes automatizados e padrões de projeto com Java, além de engenharia de prompts e desenvolvimento de agentes com IA. Inclui projetos práticos integrando as duas áreas."
-
   },
   "projects": {
     "title": "Projetos",
@@ -127,6 +118,25 @@
         "name": "App E-commerce Sale",
         "description": "Sistema ERP focado em roupas desenvolvido como projeto fullstack, composto por um backend em Spring Boot e um frontend em TypeScript utilizando Vite. O objetivo do projeto é simular um sistema de gerenciamento de vendas de produtos, permitindo cadastro de produtos, registro de vendas e visualização de métricas através de um dashboard."
       }
+    ]
+  },
+  "timeline": {
+    "education": "Graduação",
+    "research": "Pesquisa IC",
+    "training": "Formação",
+    "current": "atual",
+    "inProgress": "Em andamento",
+    "finished": "Concluído",
+    "sectionTitle": "Trajetória",
+    "items": [
+      { "period": "04.2026 – 05.2026", "title": "Globant Java & Spring Boot AI", "category": "formação" },
+      { "period": "10.2025 – atual", "title": "Projeto LARA – Iniciação Científica: web", "category": "pesquisa", "current": true },
+      { "period": "07.2025 – 08.2025", "title": "GFT #7 – Java", "category": "formação" },
+      { "period": "10.2024 – 09.2025", "title": "Projeto LARA – Iniciação Científica: robótica", "category": "pesquisa" },
+      { "period": "02.2024 – 03.2024", "title": "Formação React Developer", "category": "formação" },
+      { "period": "01.2024 – 02.2024", "title": "Formação JavaScript Developer", "category": "formação" },
+      { "period": "12.2023 – 01.2024", "title": "Formação TypeScript Fullstack Developer", "category": "formação" },
+      { "period": "02.2023 – atual", "title": "Bacharelado em Ciência da Computação – UESB", "category": "educação", "current": true }
     ]
   },
   "footer": {

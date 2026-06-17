@@ -134,7 +134,7 @@ const About = ({ language, theme }) => {
         </Container>
       </section>
 
-      <section style={{ width: '100vw', backgroundColor: c.primary, paddingTop: 50, paddingBottom: 50 }}>
+      {/* <section style={{ width: '100vw', backgroundColor: c.primary, paddingTop: 50, paddingBottom: 50 }}>
         <Container style={{ padding: 10 }}>
           <Row>
             <h2 style={{ fontFamily: 'Bebas Neue', color: '#fff' }}>
@@ -156,7 +156,7 @@ const About = ({ language, theme }) => {
             </ListGroup>
           </Row>
         </Container>
-      </section>
+      </section> */}
     </>
   )
 }
