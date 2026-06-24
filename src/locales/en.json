@@ -132,6 +132,7 @@
     "finished": "Completed",
     "sectionTitle": "Timeline",
     "items": [
+      { "period": "06.2026 – present", "title": "Santander 2026 - AI Java Back-end", "category": "training", "current": true },
       { "period": "04.2026 – 05.2026", "title": "Globant Java & Spring Boot AI", "category": "training" },
       { "period": "10.2025 – present", "title": "LARA Project – Undergraduate Research: web", "category": "research", "current": true },
       { "period": "07.2025 – 08.2025", "title": "GFT #7 – Java", "category": "training" },

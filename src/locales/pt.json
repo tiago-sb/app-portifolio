@@ -132,6 +132,7 @@
     "finished": "Concluído",
     "sectionTitle": "Trajetória",
     "items": [
+      { "period": "06.2026 – atual", "title": "Santander 2026 - AI Java Back-end", "category": "formação", "current": true },
       { "period": "04.2026 – 05.2026", "title": "Globant Java & Spring Boot AI", "category": "formação" },
       { "period": "10.2025 – atual", "title": "Projeto LARA – Iniciação Científica: web", "category": "pesquisa", "current": true },
       { "period": "07.2025 – 08.2025", "title": "GFT #7 – Java", "category": "formação" },

@@ -132,13 +132,14 @@
     "finished": "Completado",
     "sectionTitle": "Trayectoria",
     "items": [
-      { "period": "04.2026 – 05.2026", "title": "Globant Java & Spring Boot AI", "category": "training" },
+      { "period": "06.2026 – actualidad", "title": "Santander 2026 - AI Java Back-end", "category": "capacitación", "current": true },
+      { "period": "04.2026 – 05.2026", "title": "Globant Java & Spring Boot AI", "category": "capacitación" },
       { "period": "10.2025 – actualidad", "title": "Proyecto LARA – Iniciación Científica: web", "category": "research", "current": true },
-      { "period": "07.2025 – 08.2025", "title": "GFT #7 – Java", "category": "training" },
+      { "period": "07.2025 – 08.2025", "title": "GFT #7 – Java", "category": "capacitación" },
       { "period": "10.2024 – 09.2025", "title": "Proyecto LARA – Iniciación Científica: robótica", "category": "research" },
-      { "period": "02.2024 – 03.2024", "title": "Formación React Developer", "category": "training" },
-      { "period": "01.2024 – 02.2024", "title": "Formación JavaScript Developer", "category": "training" },
-      { "period": "12.2023 – 01.2024", "title": "Formación TypeScript Fullstack Developer", "category": "training" },
+      { "period": "02.2024 – 03.2024", "title": "Formación React Developer", "category": "capacitación" },
+      { "period": "01.2024 – 02.2024", "title": "Formación JavaScript Developer", "category": "capacitación" },
+      { "period": "12.2023 – 01.2024", "title": "Formación TypeScript Fullstack Developer", "category": "capacitación" },
       { "period": "02.2023 – actualidad", "title": "Grado en Ciencias de la Computación – UESB", "category": "education", "current": true }
     ]
   },
