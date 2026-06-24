@@ -92,7 +92,7 @@ const About = ({ language, theme }) => {
                 <b>
                   <a 
                     rel="noreferrer"
-                    href="https://drive.google.com/file/d/18-lGT5UKMxWOAttTNAxwhIfw_5_Spvgg/view?usp=sharing"
+                    href="https://drive.google.com/file/d/13S2ZUeirA1IcLMVZhwNYwnrS5lPk_E3J/view"
                     style={{ textDecoration: 'none', color: '#fff' }}
                     target="_blank"
                   >

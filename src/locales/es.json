@@ -69,7 +69,10 @@
     "javaDescription": "Aprendí fundamentos de Java, programación orientada a objetos, desarrollo de APIs con Spring Boot, persistencia de datos, bases de datos relacionales y no relacionales, además de conceptos de AWS.",
     "javaAndAITitle": "Globant - Java & Spring Boot AI Developer - Completo",
     "javaAndAIInstitution": "DIO",
-    "javaAndAIDescription": "Curso fullstack enfocado en Java e Inteligencia Artificial. Abarca orientación a objetos, pruebas automatizadas y patrones de diseño con Java, además de ingeniería de prompts y desarrollo de agentes con IA. Incluye proyectos prácticos integrando ambas áreas."
+    "javaAndAIDescription": "Curso fullstack enfocado en Java e Inteligencia Artificial. Abarca orientación a objetos, pruebas automatizadas y patrones de diseño con Java, además de ingeniería de prompts y desarrollo de agentes con IA. Incluye proyectos prácticos integrando ambas áreas.",
+    "javaBackendTitle": "Santander 2026 - AI Java Back-end - En Curso",
+    "javaBackendInstitution": "DIO",
+    "javaBackendDescription": "Construcción de sistemas back-end robustos y seguros con Java, aprendizaje de fundamentos y sintaxis de Java, construcción de APIs REST seguras con Spring Boot y Spring Security, aplicación de principios de Clean Architecture, e integración con servicios externos como Whisper para crear un asistente virtual inteligente por voz como proyecto final."
   },
   "projects": {
     "title": "Proyectos",

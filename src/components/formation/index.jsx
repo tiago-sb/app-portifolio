@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Container, Nav, Card } from 'react-bootstrap';
 import { Translations } from '../translation/Translation';
 import { Themes } from '../theme/Themes';
+import "./index.css"
 
 const Formation = ({language, theme}) => {
   const t = Translations[language]
@@ -49,7 +50,7 @@ const Formation = ({language, theme}) => {
           <div className='w-100' style={{ cursor: 'pointer' }}>
             {
               activeTab === "cursos" ? (
-                <>
+                <div className="custom-scroll" style={{ maxHeight: '70vh', overflowY: 'auto' }}>
                   <Card style={{ backgroundColor: c.primary, border: 'none' }}>
                     <Card.Body>
                       <Card.Title style={{ color: '#fff', fontFamily: 'Bebas Neue' }}>
@@ -115,7 +116,20 @@ const Formation = ({language, theme}) => {
                       </Card.Text>
                     </Card.Body>
                   </Card>
-                </>
+                  <Card style={{ backgroundColor: c.primary, border: 'none' }}>
+                    <Card.Body>
+                      <Card.Title style={{ color: '#fff', fontFamily: 'Bebas Neue' }}>
+                        {t.formation.javaBackendTitle}
+                      </Card.Title>
+                      <Card.Subtitle style={{ color: '#fff', fontFamily: 'Poppins' }}>
+                        {t.formation.javaBackendInstitution}
+                      </Card.Subtitle>
+                      <Card.Text style={{ color: '#fff', fontFamily: 'Poppins' }}>
+                        {t.formation.javaBackendDescription}
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </div>
               ) : (
                 <Card style={{ backgroundColor: c.primary, border: 'none' }}>
                   <Card.Body>
