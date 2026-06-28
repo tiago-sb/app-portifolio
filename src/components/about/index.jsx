@@ -71,8 +71,8 @@ const About = ({ language, theme }) => {
               <Figure>
                 <Figure.Image
                   alt="foto tiago bela"
-                  src="./images/foto_minha.jpg"
-                  style={{ width: '80%', borderRadius: 10 }}
+                  src="./images/foto_minha.png"
+                  style={{ width: '80%', borderRadius: '50%', boxShadow: '' }}
                 />
               </Figure>
             </Col>
