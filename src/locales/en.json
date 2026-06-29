@@ -35,18 +35,34 @@
     "title": "Skills",
     "frontend": "Front-End",
     "backend": "Back-End",
+    "database": "Database",
+    "devops": "DevOps",
     "other": "Other Technologies",
-    "html": "HTML is the standard markup language used to structure content on the web.",
-    "css": "CSS is used to style web pages by controlling colors, spacing, fonts and layouts.",
-    "javascript": "JavaScript is a versatile programming language widely used in web development.",
-    "typescript": "TypeScript is a superset of JavaScript that adds static typing.",
+
+    "html": "HTML (HyperText Markup Language) is the most fundamental building block of the web. It defines the structure and meaning of web content.",
+    "css": "CSS (Cascading Style Sheets) is a styling language used to add colors, fonts, spacing, and layouts to web pages.",
+    "javascript": "JavaScript is an interpreted, multi-paradigm programming language widely used for web development.",
+    "typescript": "TypeScript is a superset of JavaScript that adds optional static typing.",
     "react": "React is a JavaScript library for building modern and reusable user interfaces.",
-    "node": "Node.js allows JavaScript execution outside the browser using Google's V8 engine.",
-    "java": "Java is an object-oriented and cross-platform programming language used worldwide.",
-    "cpp": "C++ is a compiled multi-paradigm programming language widely used for high-performance applications.",
-    "haskell": "Haskell is a strongly typed functional programming language.",
-    "prolog": "Prolog is a logic programming language commonly used in artificial intelligence.",
-    "sql": "SQL is used to store, query and manipulate relational database data."
+    "bootstrap": "Bootstrap is a CSS framework that provides responsive components and prebuilt styles to speed up interface development.",
+    "vite": "Vite is a modern build tool that provides an extremely fast development environment for web applications.",
+
+    "node": "Node.js allows JavaScript to run outside the browser using Google's V8 engine.",
+    "java": "Java is an object-oriented, cross-platform programming language used in billions of devices.",
+    "springboot": "Spring Boot is a Spring-based framework that simplifies Java application development, especially REST APIs.",
+    "jwt": "JWT (JSON Web Token) is a standard used for authentication and secure information exchange between applications.",
+
+    "postgresql": "PostgreSQL is an open-source relational database management system known for its robustness, performance, and SQL standards compliance.",
+    "mysql": "MySQL is a relational database management system widely used in web applications.",
+    "sql": "SQL is a language used to store, query, and manipulate data in relational databases.",
+
+    "git": "Git is a distributed version control system used to track changes in source code.",
+    "github": "GitHub is a platform for hosting and collaborating on projects using Git.",
+    "docker": "Docker is a platform that packages applications and their dependencies inside isolated virtual containers.",
+
+    "cpp": "C++ is a compiled, multi-paradigm programming language widely used in systems and high-performance applications.",
+    "haskell": "Haskell is a functional programming language with strong static typing.",
+    "prolog": "Prolog is a logic programming language used for problem-solving and artificial intelligence."
   },
   "formation": {
     "title": "Education",

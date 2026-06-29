@@ -23,3 +23,14 @@
 .accordion-dark .accordion-button::after {
   filter: invert(1);
 }
+
+.custom-scroll {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar) transparent;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: var(--scrollbar);
+  border-radius: 999px;
+}

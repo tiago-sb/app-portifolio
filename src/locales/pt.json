@@ -35,18 +35,34 @@
     "title": "Habilidades",
     "frontend": "Front-End",
     "backend": "Back-End",
+    "database": "Banco de Dados",
+    "devops": "DevOps",
     "other": "Outras Tecnologias",
+
     "html": "HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o significado e a estrutura do conteúdo da web.",
     "css": "CSS (Folhas de Estilo em Cascata) é um mecanismo para adicionar estilos como cores, fontes e espaçamentos a páginas web.",
     "javascript": "JavaScript é uma linguagem de programação interpretada, multiparadigma e amplamente utilizada para desenvolvimento web.",
     "typescript": "TypeScript é um superconjunto do JavaScript que adiciona tipagem estática opcional.",
     "react": "React é uma biblioteca JavaScript para criação de interfaces de usuário modernas e reutilizáveis.",
+    "bootstrap": "Bootstrap é um framework CSS que fornece componentes responsivos e estilos prontos para acelerar o desenvolvimento de interfaces.",
+    "vite": "Vite é uma ferramenta de build moderna que oferece um ambiente de desenvolvimento extremamente rápido para aplicações web.",
+
     "node": "Node.js permite executar JavaScript fora do navegador utilizando o motor V8 do Google.",
     "java": "Java é uma linguagem orientada a objetos, multiplataforma e utilizada em bilhões de dispositivos.",
+    "springboot": "Spring Boot é um framework baseado em Spring que simplifica o desenvolvimento de aplicações Java, especialmente APIs REST.",
+    "jwt": "JWT (JSON Web Token) é um padrão utilizado para autenticação e troca segura de informações entre aplicações.",
+
+    "postgresql": "PostgreSQL é um banco de dados relacional open source conhecido por sua robustez, desempenho e conformidade com padrões SQL.",
+    "mysql": "MySQL é um sistema gerenciador de banco de dados relacional amplamente utilizado em aplicações web.",
+    "sql": "SQL é uma linguagem utilizada para armazenar, consultar e manipular dados em bancos relacionais.",
+
+    "git": "Git é um sistema de controle de versão distribuído utilizado para rastrear alterações no código-fonte.",
+    "github": "GitHub é uma plataforma para hospedagem e colaboração de projetos utilizando Git.",
+    "docker": "O Docker é uma plataforma que empacota aplicações e suas dependências dentro de contêineres virtuais isolados.",
+
     "cpp": "C++ é uma linguagem compilada, multiparadigma e amplamente utilizada em sistemas e aplicações de alto desempenho.",
     "haskell": "Haskell é uma linguagem funcional com tipagem estática forte.",
-    "prolog": "Prolog é uma linguagem baseada em lógica formal utilizada para resolução de problemas e inteligência artificial.",
-    "sql": "SQL é uma linguagem utilizada para armazenar, consultar e manipular dados em bancos relacionais."
+    "prolog": "Prolog é uma linguagem baseada em lógica formal utilizada para resolução de problemas e inteligência artificial."
   },
   "formation": {
     "title": "Formação",

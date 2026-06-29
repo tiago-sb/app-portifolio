@@ -35,18 +35,34 @@
     "title": "Habilidades",
     "frontend": "Front-End",
     "backend": "Back-End",
+    "database": "Base de Datos",
+    "devops": "DevOps",
     "other": "Otras Tecnologías",
-    "html": "HTML es el lenguaje de marcado estándar utilizado para estructurar contenido en la web.",
-    "css": "CSS se utiliza para aplicar estilos, colores, fuentes y diseños a las páginas web.",
-    "javascript": "JavaScript es un lenguaje de programación ampliamente utilizado en el desarrollo web.",
-    "typescript": "TypeScript es un superconjunto de JavaScript que añade tipado estático.",
-    "react": "React es una biblioteca JavaScript para crear interfaces modernas y reutilizables.",
-    "node": "Node.js permite ejecutar JavaScript fuera del navegador utilizando el motor V8.",
-    "java": "Java es un lenguaje orientado a objetos y multiplataforma utilizado en todo el mundo.",
-    "cpp": "C++ es un lenguaje compilado multiparadigma utilizado para aplicaciones de alto rendimiento.",
-    "haskell": "Haskell es un lenguaje funcional con tipado estático fuerte.",
-    "prolog": "Prolog es un lenguaje basado en lógica formal utilizado en inteligencia artificial.",
-    "sql": "SQL es un lenguaje para almacenar, consultar y manipular datos en bases de datos relacionales."
+
+    "html": "HTML (Lenguaje de Marcado de Hipertexto) es el bloque de construcción más básico de la web. Define el significado y la estructura del contenido web.",
+    "css": "CSS (Hojas de Estilo en Cascada) es un mecanismo para agregar estilos como colores, fuentes y espaciados a las páginas web.",
+    "javascript": "JavaScript es un lenguaje de programación interpretado, multiparadigma y ampliamente utilizado para el desarrollo web.",
+    "typescript": "TypeScript es un superconjunto de JavaScript que añade tipado estático opcional.",
+    "react": "React es una biblioteca de JavaScript para crear interfaces de usuario modernas y reutilizables.",
+    "bootstrap": "Bootstrap es un framework CSS que proporciona componentes responsivos y estilos predefinidos para acelerar el desarrollo de interfaces.",
+    "vite": "Vite es una herramienta de compilación moderna que ofrece un entorno de desarrollo extremadamente rápido para aplicaciones web.",
+
+    "node": "Node.js permite ejecutar JavaScript fuera del navegador utilizando el motor V8 de Google.",
+    "java": "Java es un lenguaje orientado a objetos, multiplataforma y utilizado en miles de millones de dispositivos.",
+    "springboot": "Spring Boot es un framework basado en Spring que simplifica el desarrollo de aplicaciones Java, especialmente APIs REST.",
+    "jwt": "JWT (JSON Web Token) es un estándar utilizado para la autenticación y el intercambio seguro de información entre aplicaciones.",
+
+    "postgresql": "PostgreSQL es un sistema de gestión de bases de datos relacional de código abierto conocido por su robustez, rendimiento y conformidad con los estándares SQL.",
+    "mysql": "MySQL es un sistema de gestión de bases de datos relacional ampliamente utilizado en aplicaciones web.",
+    "sql": "SQL es un lenguaje utilizado para almacenar, consultar y manipular datos en bases de datos relacionales.",
+
+    "git": "Git es un sistema de control de versiones distribuido utilizado para rastrear cambios en el código fuente.",
+    "github": "GitHub es una plataforma para alojar y colaborar en proyectos utilizando Git.",
+    "docker": "Docker es una plataforma que empaqueta aplicaciones y sus dependencias dentro de contenedores virtuales aislados.",
+
+    "cpp": "C++ es un lenguaje compilado, multiparadigma y ampliamente utilizado en sistemas y aplicaciones de alto rendimiento.",
+    "haskell": "Haskell es un lenguaje de programación funcional con tipado estático fuerte.",
+    "prolog": "Prolog es un lenguaje basado en lógica formal utilizado para la resolución de problemas y la inteligencia artificial."
   },
   "formation": {
     "title": "Formación",
