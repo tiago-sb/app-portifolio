@@ -86,7 +86,7 @@
     "javaAndAITitle": "Globant - Java & Spring Boot AI Developer - Completo",
     "javaAndAIInstitution": "DIO",
     "javaAndAIDescription": "Curso fullstack com foco em Java e Inteligência Artificial. Abrange orientação a objetos, testes automatizados e padrões de projeto com Java, além de engenharia de prompts e desenvolvimento de agentes com IA. Inclui projetos práticos integrando as duas áreas.",
-    "javaBackendTitle": "Santander 2026 - AI Java Back-end - Cursando",
+    "javaBackendTitle": "Santander 2026 - AI Java Back-end - Completo",
     "javaBackendInstitution": "DIO",
     "javaBackendDescription": "Construção de sistemas back-end robustos e seguros com Java, aprendizado de fundamentos e sintaxe do Java, construção de APIs REST seguras com Spring Boot e Spring Security, aplicação de princípios de Clean Architecture, e integração com serviços externos como Whisper para criação um assistente virtual inteligente por voz como projeto final."
   },
@@ -136,6 +136,9 @@
       {
         "name": "App E-commerce Sale",
         "description": "Sistema ERP focado em roupas desenvolvido como projeto fullstack, composto por um backend em Spring Boot e um frontend em TypeScript utilizando Vite. O objetivo do projeto é simular um sistema de gerenciamento de vendas de produtos, permitindo cadastro de produtos, registro de vendas e visualização de métricas através de um dashboard."
+      }, {
+        "name": "App Marketplace",
+        "description": "Backend de um sistema de marketplace para gerenciamento e venda de ingressos para eventos, desenvolvido em Java com Spring Boot seguindo uma arquitetura modular inspirada em Domain-Driven Design (DDD) e Clean Architecture."
       }
     ]
   },
@@ -148,7 +151,7 @@
     "finished": "Concluído",
     "sectionTitle": "Trajetória",
     "items": [
-      { "period": "06.2026 – atual", "title": "Santander 2026 - AI Java Back-end", "category": "formação", "current": true },
+      { "period": "06.2026 – 07.2026", "title": "Santander 2026 - AI Java Back-end", "category": "formação" },
       { "period": "04.2026 – 05.2026", "title": "Globant Java & Spring Boot AI", "category": "formação" },
       { "period": "10.2025 – atual", "title": "Projeto LARA – Iniciação Científica: web", "category": "pesquisa", "current": true },
       { "period": "07.2025 – 08.2025", "title": "GFT #7 – Java", "category": "formação" },

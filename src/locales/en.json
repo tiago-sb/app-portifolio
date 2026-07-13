@@ -86,7 +86,7 @@
     "javaAndAITitle": "Globant - Java & Spring Boot AI Developer - Completed",
     "javaAndAIInstitution": "DIO",
     "javaAndAIDescription": "Fullstack course focused on Java and Artificial Intelligence. Covers object-oriented programming, automated testing and design patterns with Java, as well as prompt engineering and AI agent development. Includes hands-on projects integrating both areas.",
-    "javaBackendTitle": "Santander 2026 - AI Java Back-end - In Progress",
+    "javaBackendTitle": "Santander 2026 - AI Java Back-end - Completed",
     "javaBackendInstitution": "DIO",
     "javaBackendDescription": "Building robust and secure back-end systems with Java, learning Java fundamentals and syntax, building secure REST APIs with Spring Boot and Spring Security, applying Clean Architecture principles, and integrating with external services such as Whisper to create an intelligent voice virtual assistant as a final project."
   },
@@ -136,6 +136,10 @@
       {
         "name": "App E-commerce Sale",
         "description": "ERP system focused on clothing, developed as a fullstack project consisting of a Spring Boot backend and a TypeScript frontend using Vite. The goal is to simulate a product sales management system, allowing product registration, sales recording, and metrics visualization through a dashboard."
+      },
+      {
+        "name": "App Marketplace",
+        "description": "Backend for an event ticketing marketplace system, developed in Java with Spring Boot, following a modular architecture inspired by Domain-Driven Design (DDD) and Clean Architecture."
       }
     ]
   },
@@ -148,7 +152,7 @@
     "finished": "Completed",
     "sectionTitle": "Timeline",
     "items": [
-      { "period": "06.2026 – present", "title": "Santander 2026 - AI Java Back-end", "category": "training", "current": true },
+      { "period": "06.2026 – 07.2026", "title": "Santander 2026 - AI Java Back-end", "category": "training" },
       { "period": "04.2026 – 05.2026", "title": "Globant Java & Spring Boot AI", "category": "training" },
       { "period": "10.2025 – present", "title": "LARA Project – Undergraduate Research: web", "category": "research", "current": true },
       { "period": "07.2025 – 08.2025", "title": "GFT #7 – Java", "category": "training" },

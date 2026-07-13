@@ -86,7 +86,7 @@
     "javaAndAITitle": "Globant - Java & Spring Boot AI Developer - Completo",
     "javaAndAIInstitution": "DIO",
     "javaAndAIDescription": "Curso fullstack enfocado en Java e Inteligencia Artificial. Abarca orientación a objetos, pruebas automatizadas y patrones de diseño con Java, además de ingeniería de prompts y desarrollo de agentes con IA. Incluye proyectos prácticos integrando ambas áreas.",
-    "javaBackendTitle": "Santander 2026 - AI Java Back-end - En Curso",
+    "javaBackendTitle": "Santander 2026 - AI Java Back-end - Completo",
     "javaBackendInstitution": "DIO",
     "javaBackendDescription": "Construcción de sistemas back-end robustos y seguros con Java, aprendizaje de fundamentos y sintaxis de Java, construcción de APIs REST seguras con Spring Boot y Spring Security, aplicación de principios de Clean Architecture, e integración con servicios externos como Whisper para crear un asistente virtual inteligente por voz como proyecto final."
   },
@@ -136,6 +136,9 @@
       {
         "name": "App E-commerce Sale",
         "description": "Sistema ERP enfocado en ropa, desarrollado como proyecto fullstack compuesto por un backend en Spring Boot y un frontend en TypeScript usando Vite. El objetivo es simular un sistema de gestión de ventas de productos, permitiendo el registro de productos, el registro de ventas y la visualización de métricas a través de un dashboard."
+      }, {
+        "name": "App Marketplace",
+        "description": "Backend de un sistema de marketplace para la gestión y venta de entradas para eventos, desarrollado en Java con Spring Boot, siguiendo una arquitectura modular inspirada en Domain-Driven Design (DDD) y Clean Architecture."
       }
     ]
   },
@@ -148,7 +151,7 @@
     "finished": "Completado",
     "sectionTitle": "Trayectoria",
     "items": [
-      { "period": "06.2026 – actualidad", "title": "Santander 2026 - AI Java Back-end", "category": "capacitación", "current": true },
+      { "period": "06.2026 – 07.2026", "title": "Santander 2026 - AI Java Back-end", "category": "capacitación" },
       { "period": "04.2026 – 05.2026", "title": "Globant Java & Spring Boot AI", "category": "capacitación" },
       { "period": "10.2025 – actualidad", "title": "Proyecto LARA – Iniciación Científica: web", "category": "research", "current": true },
       { "period": "07.2025 – 08.2025", "title": "GFT #7 – Java", "category": "capacitación" },

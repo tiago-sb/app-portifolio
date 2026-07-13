@@ -79,6 +79,11 @@ const Project = ({ language, theme }) => {
       url: "./images/projetos/e-commerce_sale.png",
       languages: ["TypeScript", "React" ,"Spring Boot", "PostgreSQL"],
       repository: "https://github.com/tiago-sb/app-ecommerce-sale"
+    }, {
+      name: "Marketplace",
+      url: "./images/projetos/marketplace.png",
+      languages: ["Spring Boot", "PostgreSQL", "MySQL", "MongoDB", "Redis", "Docker "],
+      repository: "https://github.com/tiago-sb/app-marketplace"
     }
   ]
 
