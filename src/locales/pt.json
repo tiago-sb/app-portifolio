@@ -139,6 +139,9 @@
       }, {
         "name": "App Marketplace",
         "description": "Backend de um sistema de marketplace para gerenciamento e venda de ingressos para eventos, desenvolvido em Java com Spring Boot seguindo uma arquitetura modular inspirada em Domain-Driven Design (DDD) e Clean Architecture."
+      }, {
+        "name": "App UniVC",
+        "description": "O AVA UniVC é a Single Page Application (SPA) oficial da Prefeitura Municipal de Vitória da Conquista voltada à capacitação contínua, gestão de trilhas formativas e valorização funcional dos servidores públicos municipais."
       }
     ]
   },
