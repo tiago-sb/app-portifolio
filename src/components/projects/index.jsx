@@ -86,7 +86,7 @@ const Project = ({ language, theme }) => {
       repository: "https://github.com/tiago-sb/app-marketplace"
     }, {
       name: "Ava UniVC",
-      url: "",
+      url: ".images/projetos/ava_uniVC.png",
       languages: ["Vue.js", "Quasar", "Nest.js", "Prisma ORM", "PostgreSQL"],
       repository: "https://github.com/tiago-sb/app-avaUniVC-frontend",
       deploy: "https://ava-univc.onrender.com/#/login"
